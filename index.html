@@ -4,127 +4,132 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gloss Lab</title>
-  <meta name="description" content="Gloss Lab – Professional nail salon portfolio site showcasing services, nail art, and modern beauty.">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">Gloss Lab</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <p>Gloss Lab</p>
+  </div>
 
-  <!-- Hero -->
-  <header class="hero">
-    <img src="images/heronail.jpg" alt="Hero Nail" class="hero-img">
-    <div class="hero-text fade-on-scroll">
-      <h1>Welcome to Gloss Lab</h1>
-      <p>Elegant • Professional • Unique</p>
-      <a href="#contact" class="btn">Book Now</a>
-    </div>
+  <!-- Scroll Caption -->
+  <div id="scroll-caption">HOME</div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="navbar">
+      <h1 class="logo">Gloss Lab</h1>
+      <ul class="nav-links">
+        <li><a href="#welcome">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle">☰</button>
+      <a href="#contact" class="book-btn">Book Now</a>
+    </nav>
   </header>
 
-  <!-- About -->
-  <section id="about" class="about fade-on-scroll">
-    <h2>About Me</h2>
-    <div class="about-container">
-      <img src="images/profilenail1.jpg" alt="Profile Picture" class="profile-pic">
-      <p>
-        Hi! I’m Henry, founder of Gloss Lab. I create professional, stylish, and creative nail designs that leave every client feeling confident and pampered. 
-        My mission is to make nail care a luxurious, yet approachable experience.
-      </p>
+  <!-- Hero Section -->
+  <section id="welcome" class="hero fade-in" style="background-image: url('images/heronail.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Welcome to Gloss Lab</h2>
+      <p>Your modern nail studio for beauty, art, and care.</p>
+      <a href="#services" class="book-btn explore-btn">Explore Services</a>
     </div>
   </section>
 
-  <!-- Work -->
-  <section id="work" class="work fade-on-scroll">
-    <h2>My Work</h2>
-    <div class="work-grid">
-      <div class="work-card">
+  <!-- Services Section -->
+  <section id="services" class="section fade-in">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card fade-in">
         <img src="images/gelpolish.jpg" alt="Gel Polish">
         <h3>Gel Polish</h3>
+        <p>Shiny, durable, and flawless finish for everyday elegance.</p>
         <p class="price">$30</p>
-        <p class="desc">Chip-resistant polish with a glossy, long-lasting finish.</p>
       </div>
-      <div class="work-card">
-        <img src="images/heronail.jpg" alt="Hero Nail Design">
-        <h3>Signature Nail Design</h3>
-        <p class="price">$65</p>
-        <p class="desc">Luxurious custom design that makes a bold statement.</p>
+      <div class="service-card fade-in">
+        <img src="images/rubbernail.jpg" alt="Rubber Base">
+        <h3>Rubber Base</h3>
+        <p>Stronger foundation for long-lasting nail beauty.</p>
+        <p class="price">$35</p>
       </div>
-      <div class="work-card">
-        <img src="images/nail1.jpg" alt="Acrylic Nails">
-        <h3>Acrylic Nails</h3>
-        <p class="price">$60</p>
-        <p class="desc">Beautifully sculpted acrylics for strength and style.</p>
-      </div>
-      <div class="work-card">
-        <img src="images/nail2.jpg" alt="Classic Nails">
-        <h3>Classic Nail Style</h3>
-        <p class="price">$25</p>
-        <p class="desc">Simple and elegant nails perfect for everyday wear.</p>
-      </div>
-      <div class="work-card">
-        <img src="images/nail3.jpg" alt="Creative Nail Art">
-        <h3>Creative Nail Art</h3>
-        <p class="price">$50</p>
-        <p class="desc">Unique hand-painted nail art with intricate detail.</p>
-      </div>
-      <div class="work-card">
-        <img src="images/nailartist.jpg" alt="Professional Nail Artist">
-        <h3>Artist Design</h3>
-        <p class="price">$70</p>
-        <p class="desc">High-end artistry using advanced techniques & premium materials.</p>
-      </div>
-      <div class="work-card">
-        <img src="images/rubbernail.jpg" alt="Rubber Nail Set">
-        <h3>Rubber Nail Set</h3>
-        <p class="price">$55</p>
-        <p class="desc">Durable, flexible nail set that looks natural and feels comfortable.</p>
-      </div>
-      <div class="work-card">
-        <img src="images/spachair.jpg" alt="Spa Chair">
-        <h3>Spa Chair Experience</h3>
+      <div class="service-card fade-in">
+        <img src="images/spachair.jpg" alt="Spa Pedicure">
+        <h3>Spa Pedicure</h3>
+        <p>Relaxing treatment for healthy, beautiful feet.</p>
         <p class="price">$40</p>
-        <p class="desc">Relaxing spa chair with massage & soothing nail soak.</p>
+      </div>
+      <div class="service-card fade-in">
+        <img src="images/nail1.jpg" alt="Pink Acrylic Finish">
+        <h3>Pink Acrylic Finish</h3>
+        <p>Elegant, long-lasting acrylic with polished pink finish.</p>
+        <p class="price">$50</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact fade-on-scroll">
-    <h2>Contact / Schedule</h2>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <select name="service" required>
-        <option value="">Select Service</option>
-        <option value="Gel Polish">Gel Polish</option>
-        <option value="Signature Nail Design">Signature Nail Design</option>
-        <option value="Acrylic Nails">Acrylic Nails</option>
-        <option value="Classic Nail Style">Classic Nail Style</option>
-        <option value="Creative Nail Art">Creative Nail Art</option>
-        <option value="Artist Design">Artist Design</option>
-        <option value="Rubber Nail Set">Rubber Nail Set</option>
-        <option value="Spa Chair Experience">Spa Chair Experience</option>
-      </select>
-      <input type="date" name="date" required>
-      <textarea name="message" placeholder="Message" rows="4"></textarea>
-      <button type="submit">Submit</button>
-      <p class="form-success" style="display:none;">✅ Thank you! This is a demo portfolio project. Form not connected.</p>
-    </form>
-    <div class="socials">
-      <a href="#">Instagram</a>
-      <a href="#">WhatsApp</a>
-      <a href="#">Facebook</a>
+  <!-- About Section -->
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <div class="about-wrapper">
+      <img src="images/profilenail1.jpg" alt="Profile Picture" class="about-img fade-in">
+      <div class="about-text fade-in">
+        <p>Hi, I’m your professional nail artist at Gloss Lab. With years of expertise in nail care and creative art, I specialize in bringing out your personal style through beautiful and lasting nails.</p>
+        <p>My passion is making every client feel confident and stylish with unique, high-quality nail designs.</p>
+      </div>
     </div>
   </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="section fade-in">
+    <h2>What Clients Say</h2>
+    <div class="reviews-grid">
+      <div class="review-card fade-in">
+        <p>"Absolutely love my nails! Gloss Lab always makes them perfect and long-lasting."</p>
+        <h4>- Emily R.</h4>
+      </div>
+      <div class="review-card fade-in">
+        <p>"Professional, creative, and so relaxing. My spa pedicure was heavenly!"</p>
+        <h4>- Sarah K.</h4>
+      </div>
+      <div class="review-card fade-in">
+        <p>"Pink acrylic finish exceeded my expectations. I get compliments everywhere!"</p>
+        <h4>- Mia L.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <form class="contact-form fade-in" action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info fade-in">
+        <p><strong>Hours:</strong> Mon–Sat: 9 AM – 7 PM | Sun: Closed</p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i> @yourhandle</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a></p>
+        <p><strong>Facebook:</strong> <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i> Gloss Lab</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer fade-in">
+    <p>&copy; 2025 Gloss Lab. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
