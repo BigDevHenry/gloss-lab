@@ -4,145 +4,127 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gloss Lab</title>
+  <meta name="description" content="Gloss Lab – Professional nail salon portfolio site showcasing services, nail art, and modern beauty.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Gloss Lab</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <!-- Hero -->
   <header class="hero">
     <img src="images/heronail.jpg" alt="Hero Nail" class="hero-img">
-    <div class="hero-text">
+    <div class="hero-text fade-on-scroll">
       <h1>Welcome to Gloss Lab</h1>
       <p>Elegant • Professional • Unique</p>
+      <a href="#contact" class="btn">Book Now</a>
     </div>
   </header>
 
   <!-- About -->
-  <section class="about" id="about">
+  <section id="about" class="about fade-on-scroll">
     <h2>About Me</h2>
     <div class="about-container">
       <img src="images/profilenail1.jpg" alt="Profile Picture" class="profile-pic">
-      <p>Hello! I'm Henry, the founder of Gloss Lab. I specialize in creating unique and elegant nail designs, ensuring each client leaves feeling confident, pampered, and stylish.</p>
+      <p>
+        Hi! I’m Henry, founder of Gloss Lab. I create professional, stylish, and creative nail designs that leave every client feeling confident and pampered. 
+        My mission is to make nail care a luxurious, yet approachable experience.
+      </p>
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="services" id="services">
-    <h2>Services</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <img src="images/rubbernail.jpg" alt="Rubber Nail">
-        <h3>Rubber Nail Set</h3>
-        <p>Durable and flexible nail set with a natural look.</p>
-      </div>
-      <div class="service-card">
+  <!-- Work -->
+  <section id="work" class="work fade-on-scroll">
+    <h2>My Work</h2>
+    <div class="work-grid">
+      <div class="work-card">
         <img src="images/gelpolish.jpg" alt="Gel Polish">
         <h3>Gel Polish</h3>
-        <p>Chip-resistant gel polish with a glossy finish.</p>
+        <p class="price">$30</p>
+        <p class="desc">Chip-resistant polish with a glossy, long-lasting finish.</p>
       </div>
-      <div class="service-card">
+      <div class="work-card">
+        <img src="images/heronail.jpg" alt="Hero Nail Design">
+        <h3>Signature Nail Design</h3>
+        <p class="price">$65</p>
+        <p class="desc">Luxurious custom design that makes a bold statement.</p>
+      </div>
+      <div class="work-card">
         <img src="images/nail1.jpg" alt="Acrylic Nails">
         <h3>Acrylic Nails</h3>
-        <p>Elegant and durable acrylic nails customized for your style.</p>
+        <p class="price">$60</p>
+        <p class="desc">Beautifully sculpted acrylics for strength and style.</p>
       </div>
-      <div class="service-card">
+      <div class="work-card">
+        <img src="images/nail2.jpg" alt="Classic Nails">
+        <h3>Classic Nail Style</h3>
+        <p class="price">$25</p>
+        <p class="desc">Simple and elegant nails perfect for everyday wear.</p>
+      </div>
+      <div class="work-card">
+        <img src="images/nail3.jpg" alt="Creative Nail Art">
+        <h3>Creative Nail Art</h3>
+        <p class="price">$50</p>
+        <p class="desc">Unique hand-painted nail art with intricate detail.</p>
+      </div>
+      <div class="work-card">
+        <img src="images/nailartist.jpg" alt="Professional Nail Artist">
+        <h3>Artist Design</h3>
+        <p class="price">$70</p>
+        <p class="desc">High-end artistry using advanced techniques & premium materials.</p>
+      </div>
+      <div class="work-card">
+        <img src="images/rubbernail.jpg" alt="Rubber Nail Set">
+        <h3>Rubber Nail Set</h3>
+        <p class="price">$55</p>
+        <p class="desc">Durable, flexible nail set that looks natural and feels comfortable.</p>
+      </div>
+      <div class="work-card">
         <img src="images/spachair.jpg" alt="Spa Chair">
-        <h3>Spa Chair</h3>
-        <p>Relaxing nail spa experience in a premium chair.</p>
+        <h3>Spa Chair Experience</h3>
+        <p class="price">$40</p>
+        <p class="desc">Relaxing spa chair with massage & soothing nail soak.</p>
       </div>
     </div>
   </section>
 
-  <!-- Working Hours -->
-  <section class="hours" id="hours">
-    <h2>Working Hours</h2>
-    <p>Monday – Friday: 10 AM – 7 PM</p>
-    <p>Saturday: 11 AM – 5 PM</p>
-    <p>Sunday: Closed</p>
-  </section>
-
-  <!-- My Work (Horizontal Scroll Slider) -->
-  <section class="work" id="work">
-    <h2>My Work</h2>
-    <div class="work-slider-wrapper">
-      <button class="arrow left">&#10094;</button>
-      <div class="work-slider">
-        <div class="work-card" data-title="Spa Chair" data-price="$40" data-desc="Relax in our premium spa chair with massage and a soothing nail soak.">
-          <img src="images/spachair.jpg" alt="Spa Chair">
-          <div class="info"><h3>Spa Chair</h3><p>$40</p></div>
-        </div>
-        <div class="work-card" data-title="Rubber Nail Set" data-price="$55" data-desc="Durable and flexible rubber nail set that combines style and comfort.">
-          <img src="images/rubbernail.jpg" alt="Rubber Nail Set">
-          <div class="info"><h3>Rubber Nail</h3><p>$55</p></div>
-        </div>
-        <div class="work-card" data-title="Gel Polish" data-price="$30" data-desc="Chip-resistant gel polish available in multiple colors.">
-          <img src="images/gelpolish.jpg" alt="Gel Polish">
-          <div class="info"><h3>Gel Polish</h3><p>$30</p></div>
-        </div>
-        <div class="work-card" data-title="Acrylic Nails" data-price="$50" data-desc="Custom acrylic nails for a durable, stylish look.">
-          <img src="images/nail1.jpg" alt="Acrylic Nails">
-          <div class="info"><h3>Acrylic</h3><p>$50</p></div>
-        </div>
-        <div class="work-card" data-title="Signature Nail Design" data-price="$65" data-desc="Luxurious custom nail design with premium finishes.">
-          <img src="images/heronail.jpg" alt="Signature Nail Design">
-          <div class="info"><h3>Signature</h3><p>$65</p></div>
-        </div>
-        <div class="work-card" data-title="Classic Nail Style" data-price="$25" data-desc="Simple and elegant style perfect for everyday wear.">
-          <img src="images/nail2.jpg" alt="Classic Nail Style">
-          <div class="info"><h3>Classic Style</h3><p>$25</p></div>
-        </div>
-        <div class="work-card" data-title="Creative Nail Art" data-price="$50" data-desc="Unique, custom creative nail art with intricate details.">
-          <img src="images/nail3.jpg" alt="Creative Nail Art">
-          <div class="info"><h3>Creative Art</h3><p>$50</p></div>
-        </div>
-        <div class="work-card" data-title="Professional Nail Artist Design" data-price="$70" data-desc="High-end artistry using advanced techniques and premium materials.">
-          <img src="images/nailartist.jpg" alt="Professional Nail Artist Design">
-          <div class="info"><h3>Artist Design</h3><p>$70</p></div>
-        </div>
-      </div>
-      <button class="arrow right">&#10095;</button>
-    </div>
-  </section>
-
-  <!-- Modal -->
-  <div class="modal">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <img src="" alt="Work Preview">
-      <div class="modal-text"></div>
-    </div>
-  </div>
-
-  <!-- Contact & Schedule Form -->
-  <section class="contact" id="contact">
+  <!-- Contact -->
+  <section id="contact" class="contact fade-on-scroll">
     <h2>Contact / Schedule</h2>
     <form id="contactForm">
       <input type="text" name="name" placeholder="Name" required>
       <input type="email" name="email" placeholder="Email" required>
       <select name="service" required>
         <option value="">Select Service</option>
-        <option value="Rubber Nail Set">Rubber Nail Set</option>
         <option value="Gel Polish">Gel Polish</option>
-        <option value="Acrylic Nails">Acrylic Nails</option>
-        <option value="Spa Chair">Spa Chair</option>
         <option value="Signature Nail Design">Signature Nail Design</option>
+        <option value="Acrylic Nails">Acrylic Nails</option>
         <option value="Classic Nail Style">Classic Nail Style</option>
         <option value="Creative Nail Art">Creative Nail Art</option>
-        <option value="Professional Nail Artist Design">Professional Nail Artist Design</option>
+        <option value="Artist Design">Artist Design</option>
+        <option value="Rubber Nail Set">Rubber Nail Set</option>
+        <option value="Spa Chair Experience">Spa Chair Experience</option>
       </select>
       <input type="date" name="date" required>
       <textarea name="message" placeholder="Message" rows="4"></textarea>
       <button type="submit">Submit</button>
+      <p class="form-success" style="display:none;">✅ Thank you! This is a demo portfolio project. Form not connected.</p>
     </form>
     <div class="socials">
-      <a href="https://wa.me/YOURNUMBER" target="_blank">WhatsApp</a>
-      <a href="mailto:youremail@gmail.com">Email</a>
-      <a href="https://instagram.com/YOURINSTAGRAM" target="_blank">Instagram</a>
-      <a href="https://facebook.com/YOURFACEBOOK" target="_blank">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Facebook</a>
     </div>
   </section>
-
-  <button id="translateBtn">Español</button>
 
   <script src="script.js"></script>
 </body>
